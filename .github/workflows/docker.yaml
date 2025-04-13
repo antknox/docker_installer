@@ -22,14 +22,14 @@ jobs:
          curl -o docker_desktop_installer_windows_x86_64.exe "https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe"
          curl -o docker_desktop_installer_mac_arm64.dmg "https://desktop.docker.com/mac/main/arm64/Docker.dmg"
          curl -o docker_desktop_installer_mac_x84_64.dmg "https://desktop.docker.com/mac/main/amd64/Docker.dmg"
-         curl -o docker_desktop_installer_linux_debian_x84_64.dmg "https://desktop.docker.com/linux/main/amd64/149282/docker-desktop-4.30.0-amd64.deb"
+         curl -o docker_desktop_installer_linux_debian_x84_64.deb "https://desktop.docker.com/linux/main/amd64/149282/docker-desktop-4.30.0-amd64.deb"
          curl -o docker_desktop_installer_linux_fedora_x84_64.dmg "https://desktop.docker.com/linux/main/amd64/149282/docker-desktop-4.30.0-x86_64.rpm"
-         curl -o docker_install_linux_ubuntu_x84_64_containerd.io.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/containerd.io_1.7.19-1_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-buildx-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-buildx-plugin_0.16.1-1~ubuntu.24.04~noble_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce-cli.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce-cli_27.1.1-1~ubuntu.24.04~noble_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce-rootless-extras.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce-rootless-extras_27.1.1-1~ubuntu.24.04~noble_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce_27.1.1-1~ubuntu.24.04~noble_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-compose-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-compose-plugin_2.29.1-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_install_linux_ubuntu_x84_64_containerd.io.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/containerd.io_1.7.27-1_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-buildx-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-buildx-plugin_0.22.1-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce-cli.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce-cli_28.0.4-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce-rootless-extras.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce-rootless-extras_28.0.4-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce_28.0.4-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-compose-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-compose-plugin_2.34.0-1~ubuntu.24.04~noble_amd64.deb"
 
     - name: Release
       uses: softprops/action-gh-release@v2
@@ -39,7 +39,7 @@ jobs:
           docker_desktop_installer_windows_x86_64.exe
           docker_desktop_installer_mac_arm64.dmg
           docker_desktop_installer_mac_x84_64.dmg
-          docker_desktop_installer_linux_debian_x84_64.dmg
+          docker_desktop_installer_linux_debian_x84_64.deb
           docker_desktop_installer_linux_fedora_x84_64.dmg
           docker_install_linux_ubuntu_x84_64_containerd.io.deb
           docker_installer_linux_ubuntu_x84_64_docker-buildx-plugin.deb
