@@ -25,11 +25,11 @@ jobs:
          curl -o docker_desktop_installer_linux_debian_x84_64.deb "https://desktop.docker.com/linux/main/amd64/docker-desktop-amd64.deb"
          curl -o docker_desktop_installer_linux_fedora_x84_64.rpm "https://desktop.docker.com/linux/main/amd64/docker-desktop-x86_64.rpm"
          curl -o docker_install_linux_ubuntu_x84_64_containerd.io.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/containerd.io_1.7.27-1_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-buildx-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-buildx-plugin_0.22.1-1~ubuntu.24.04~noble_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce-cli.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce-cli_28.0.4-1~ubuntu.24.04~noble_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce-rootless-extras.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce-rootless-extras_28.0.4-1~ubuntu.24.04~noble_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce_28.0.4-1~ubuntu.24.04~noble_amd64.deb"
-         curl -o docker_installer_linux_ubuntu_x84_64_docker-compose-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-compose-plugin_2.34.0-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-buildx-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-buildx-plugin_0.23.0-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce-cli.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce-cli_28.1.1-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce-rootless-extras.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce-rootless-extras_28.1.1-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-ce.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce_28.1.1-1~ubuntu.24.04~noble_amd64.deb"
+         curl -o docker_installer_linux_ubuntu_x84_64_docker-compose-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-compose-plugin_2.35.1-1~ubuntu.24.04~noble_amd64.deb"
          curl -o docker_linux_ubuntu_x84_64_docker-compose-plugin "https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64"
 
     - name: Release
