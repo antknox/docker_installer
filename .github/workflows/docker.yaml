@@ -31,7 +31,7 @@ jobs:
          curl -o docker_installer_linux_ubuntu_x84_64_docker-ce.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-ce_28.2.2-1~ubuntu.24.04~noble_amd64.deb"
          curl -o docker_installer_linux_ubuntu_x84_64_docker-compose-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-compose-plugin_2.36.2-1~ubuntu.24.04~noble_amd64.deb"
          curl -o docker_installer_linux_ubuntu_x84_64_docker-model-plugin.deb "https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-model-plugin_0.1.24-1~ubuntu.24.04~noble_amd64.deb"
-         curl -o docker_linux_ubuntu_x84_64_docker-compose-plugin "https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64"
+         #curl -o docker_linux_ubuntu_x84_64_docker-compose-plugin "https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64"
 
     - name: Release
       uses: softprops/action-gh-release@v2
@@ -50,5 +50,5 @@ jobs:
           docker_installer_linux_ubuntu_x84_64_docker-ce.deb
           docker_installer_linux_ubuntu_x84_64_docker-compose-plugin.deb
           docker_installer_linux_ubuntu_x84_64_docker-model-plugin.deb
-          docker_linux_ubuntu_x84_64_docker-compose-plugin
+          #docker_linux_ubuntu_x84_64_docker-compose-plugin
         tag_name: latest
