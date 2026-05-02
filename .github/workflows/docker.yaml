@@ -32,7 +32,6 @@ jobs:
          curl -o docker_installer_linux_ubuntu_x84_64_docker-compose-plugin.deb "https://download.docker.com/linux/ubuntu/dists/plucky/pool/stable/amd64/docker-compose-plugin_2.39.2-1~ubuntu.25.04~plucky_amd64.deb"
          curl -o docker_installer_linux_ubuntu_x84_64_docker-model-plugin.deb "https://download.docker.com/linux/ubuntu/dists/plucky/pool/stable/amd64/docker-model-plugin_0.1.39-1~ubuntu.25.04~plucky_amd64.deb"
          #curl -o docker_linux_ubuntu_x84_64_docker-compose-plugin "https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64"
-         curl -o app-arm64-v8a-release.apk "https://github.com/immich-app/immich/releases/download/v2.7.5/app-arm64-v8a-release.apk"
 
     - name: Release
       uses: softprops/action-gh-release@v2
@@ -52,5 +51,4 @@ jobs:
           docker_installer_linux_ubuntu_x84_64_docker-compose-plugin.deb
           docker_installer_linux_ubuntu_x84_64_docker-model-plugin.deb
           #docker_linux_ubuntu_x84_64_docker-compose-plugin
-          app-arm64-v8a-release.apk
         tag_name: latest
